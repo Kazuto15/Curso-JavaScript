@@ -1,0 +1,8 @@
+Escopo
+
+Global:var
+
+De bloco:let/const
+
+Let é mais usado pelo fato de que se usado dentro de bloco como if, else, for etc.. Ele só vai existir dentro daquele bloco, assim como se eu por dentro da estrutura script no geral ele vai existir em toda estrutura.
+Ja o var vai existir o tempo todo, independente de estar em um bloco especifio ou dentro da estrutura geral
