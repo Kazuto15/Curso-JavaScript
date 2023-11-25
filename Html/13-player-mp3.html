@@ -17,7 +17,9 @@
 		text-align: center;
 		background-color: white;
 	}
-
+	img{
+		border-radius: 15px;
+	}
 </style>
 </head>
 <body>
@@ -26,15 +28,22 @@
 
       <p>
         <label for="lista-de-musicas">Músicas</label> <br>
-        <select name="lista-de-musicas" id="lista-de-musicas">
+        <select name="lista-de-musicas" id="lista-de-musicas" required>
 			<option value=""></option>
-			<option value="../musicas/bytor.mp3">By-tor And Snow dog</option>
-         	<option value="../musicas/subdivisions.mp3">subdivisions</option>
-		  	<option value="../musicas/the-garden.mp3">The Garden</option>
+			<option value="../musicas/bytor.mp3" data-capa="../capas/fly-by-night.jpg">By-tor And Snow dog</option>
+         	<option value="../musicas/subdivisions.mp3" data-capa="../capas/signals.jpg">Subdivisions</option>
+		  	<option value="../musicas/the-garden.mp3" data-capa="../capas/clockwork-angels.png">The Garden</option>
           
         </select>
       </p>
 
+	  <figure hidden>
+		<img src="" alt="">
+		<figcaption></figcaption>
+	  </figure>
+
+	  <!-- Elemento de áudio
+		para a reproduçao de musicas -->
       <audio controls></audio>
 
     </div>
